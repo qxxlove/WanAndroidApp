@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">WanAndroid</string>
+
+    <!-- 状态视图  -->
+    <string name="loading">加载中...</string>
+    <string name="text_empty">还没有数据呢！</string>
+    <string name="text_nonet">网络异常！</string>
+    <string name="text_retry">点击重试</string>
+
+    <!-- 新闻 -->
+    <string name="news_commentsize">%1$s评论</string>
+    <string name="detail_header_tv">下拉一下，看点儿不一样的</string>
+    <string name="news_toast">已为您推荐了%1$s条新资讯</string>
+    <string name="finish">完成</string>
+    <string name="edit">编辑</string>
+
+    <!--通用-->
+    <string name="http_error">网络异常</string>
+    <string name="unKnown_error">未知错误</string>
+    <string name="me">我的</string>
+    <string name="knowledge_hierarchy">知识体系</string>
+    <string name="home_pager">首页</string>
+    <string name="navigation">导航</string>
+    <string name="project">项目</string>
+    <string name="search_tint">发现更多干货</string>
+    <string name="action_search">搜索</string>
+    <string name="history_search">搜索历史</string>
+    <string name="hot_search">热搜</string>
+    <string name="useful_sites">常用网站</string>
+    <string name="navigation_drawer_open">打开侧栏</string>
+    <string name="navigation_drawer_close">关闭侧栏</string>
+    <string name="double_click_exit_tint">再按一次后退键退出GeeksAndroid</string>
+    <string name="ok">是</string>
+    <string name="no">否</string>
+    <string name="reload">重新加载</string>
+
+</resources>

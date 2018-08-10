@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+
+    defaultConfig {
+        applicationId "com.tjbool.httpwww.wanandroid"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+   // implementation 'com.android.support:appcompat-v7:27.+'
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation 'com.android.support.constraint:constraint-layout:1.+'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    /**RxLifeAndroid*/
+    implementation rootProject.ext.dependencies["rxlifecycle2"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-android"]
+    /**Dagger*/
+    implementation rootProject.ext.dependencies["dagger2"]
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    /**EventBus*/
+    implementation rootProject.ext.dependencies["androideventbus"]
+    /**butterknife*/
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    /**Retrofit*/
+    implementation rootProject.ext.dependencies["retrofit"]
+    implementation rootProject.ext.dependencies["retrofit-converter-gson"]
+    implementation rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
+    /**ReJava*/
+    implementation rootProject.ext.dependencies["rxjava2"]
+    implementation rootProject.ext.dependencies["rxandroid2"]
+    /** BaseRecyclerViewHelper*/
+    implementation rootProject.ext.dependencies["BaseAdapterHelper"]
+    /**lottie动画库*/
+    implementation rootProject.ext.dependencies["lottie"]
+    /**listview刷新*/
+    implementation rootProject.ext.dependencies["ultra-ptr"]
+    /**design*/
+    implementation rootProject.ext.dependencies["design"]
+    /**RxCache*/
+    implementation rootProject.ext.dependencies["rxcache2"]
+
+
+}
